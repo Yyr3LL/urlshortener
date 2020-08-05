@@ -13,7 +13,6 @@ class AuthTest(TestCase):
             'username': 'yy',
             'password': '123123123'
         })
-        print(response.content)
         self.assertEqual(response.status_code, 301)
 
     def test_if_unauthorized_redirected(self):
@@ -38,7 +37,6 @@ class CreateUrlTest(TestCase):
 
         request.user = self.user
         response = CreateUrlView.as_view()(request)
-        print(response)
         self.assertEqual(response.status_code, 302)
         self.assertEqual(ShortenedUrl.objects.get(pk=1).long_url, long_url)
 

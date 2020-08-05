@@ -82,5 +82,4 @@ class RedirectFromShortenedView(TemplateView):
     def get(self, request, *args, **kwargs):
         url = get_object_or_404(ShortenedUrl, short_url=kwargs['short_url'])
         self.create_log(url)
-        print(url.long_url)
         return redirect(url.long_url)
