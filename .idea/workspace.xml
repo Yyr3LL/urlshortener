@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5239de23-e863-4583-8f22-3847287acab1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/middleware.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/statistics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/service.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/urllist.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/urllist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urlshortener/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/urlshortener/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urlshortener/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/urlshortener/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urlshortener/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/urlshortener/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urlshortener/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/urlshortener/wsgi.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fdu1wdYqPA1WU9WXasS8AlrxP6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/templates" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5239de23-e863-4583-8f22-3847287acab1" name="Default Changelist" comment="" />
+      <created>1596560078751</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596560078751</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="847" y="1445" width="215" height="297" key="#Notifications" timestamp="1596565956132">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="847" y="1445" width="215" height="297" key="#Notifications/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1596565956132" />
+    <state x="717" y="1392" width="476" height="404" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596581873594">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="717" y="1392" width="476" height="404" key="#com.intellij.fileTypes.FileTypeChooser/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1596581873594" />
+    <state x="491" y="1236" width="926" height="675" key="DBNavigator.ProjectSettingsDialog" timestamp="1596617940862">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="491" y="1236" width="926" height="675" key="DBNavigator.ProjectSettingsDialog/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1596617940862" />
+    <state x="735" y="1291" width="426" height="475" key="FileChooserDialogImpl" timestamp="1596617937769">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="735" y="1291" width="426" height="475" key="FileChooserDialogImpl/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1596617937769" />
+    <state x="462" y="1213" key="SettingsEditor" timestamp="1596582112462">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="462" y="1213" key="SettingsEditor/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1596582112462" />
+    <state x="565" y="332" width="744" height="608" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596630847236">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="565" y="332" width="744" height="608" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1596630847236" />
+  </component>
+</project>
