@@ -10,7 +10,7 @@ class AuthRequiredMiddleware:
     def __call__(self, request):
 
         if not request.user.is_authenticated:
-            return redirect(reverse('account_login')) # or http response
+            return redirect('/auth/login')
 
 
         response = self.get_response(request)

@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse
@@ -8,7 +9,8 @@ from .forms import CreateShortUrl
 from .models import UrlsList, Log, ShortenedUrl
 
 
-class CreateUrlView(CreateView):
+class CreateUrlView(LoginRequiredMixin, CreateView):
+    login_url = '/auth/login/'
     template_name = 'create.html'
     login_required = True
     form_class = CreateShortUrl
@@ -37,7 +39,8 @@ class CreateUrlView(CreateView):
         return redirect(reverse('list urls'))
 
 
-class UrlListView(ListView):
+class UrlListView(LoginRequiredMixin, ListView):
+    login_url = '/auth/login/'
     template_name = 'urllist.html'
     context_object_name = 'urls'
 
@@ -45,7 +48,8 @@ class UrlListView(ListView):
         return UrlsList.objects.get(user=self.request.user).urls.all()
 
 
-class StatisticsView(ListView):
+class StatisticsView(LoginRequiredMixin, ListView):
+    login_url = '/auth/login/'
     template_name = 'statistics.html'
     context_object_name = 'logs'
 
@@ -53,7 +57,7 @@ class StatisticsView(ListView):
         return Log.objects.filter(url__short_url=self.kwargs['short_url'])
 
 
-class RedirectFromShortenedView(TemplateView):
+class RedirectFromShortenedView(LoginRequiredMixin, TemplateView):
 
     def create_log(self, url):
         """
