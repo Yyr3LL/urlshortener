@@ -34,8 +34,8 @@ class Log(models.Model):
     )
     referer = models.TextField()
     ip = models.TextField()
-    date = models.DateField(
-        auto_now=True
+    date = models.DateTimeField(
+        auto_now_add=True
     )
 
     class Meta:

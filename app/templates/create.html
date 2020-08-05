@@ -5,6 +5,7 @@
     <title>Creating url</title>
 </head>
 <body>
+<a href="{% url 'list urls' %}">List urls</a>
 <form method="post">
     {{ form.as_p }}
     {% csrf_token %}

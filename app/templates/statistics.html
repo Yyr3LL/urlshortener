@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Url list</title>
+</head>
+<body>
+<ol>
+    {% for log in logs %}
+    <li>
+        <p>Date: {{log.date}}</p>
+        <p>IP: {{log.ip}}</p>
+        <p>Referer: {{log.referer}}</p>
+    </li>
+    {% endfor %}
+</ol>
+</body>
+</html>

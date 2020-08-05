@@ -32,9 +32,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'app.middleware.AuthRequiredMiddleware',
 ]
 
-ROOT_URLCONF = 'urlshortener.urls'
+ROOT_URLCONF = 'bitly-parody.urls'
 
 TEMPLATES = [
     {
@@ -58,7 +59,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 
-WSGI_APPLICATION = 'urlshortener.wsgi.application'
+WSGI_APPLICATION = 'bitly-parody.wsgi.application'
 
 DATABASES = {
     'default': {

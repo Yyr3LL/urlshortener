@@ -5,11 +5,13 @@
     <title>Url list</title>
 </head>
 <body>
+<a href="{% url 'create url' %}">Create new url!</a>
 <ol>
     {% for url in urls %}
     <li>
-        <p>{{url.short_url}}</p>
+        <a href="{{url.long_url}}">www.localhost:8000/{{url.short_url}}</a>
         <p>{{url.long_url}}</p>
+         <a href="{% url 'statistics' url.short_url %}">Show stats</a>
     </li>
     {% endfor %}
 </ol>

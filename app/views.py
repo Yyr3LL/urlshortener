@@ -1,6 +1,7 @@
 from django.http import HttpResponseRedirect
-from django.shortcuts import render, get_object_or_404
-from django.views.generic import CreateView, ListView, RedirectView, TemplateView
+from django.shortcuts import get_object_or_404, redirect
+from django.urls import reverse
+from django.views.generic import CreateView, ListView, TemplateView
 import hashlib
 
 from .forms import CreateShortUrl
@@ -9,6 +10,7 @@ from .models import UrlsList, Log, ShortenedUrl
 
 class CreateUrlView(CreateView):
     template_name = 'create.html'
+    login_required = True
     form_class = CreateShortUrl
 
     def generate_short_url(self, url):
@@ -32,7 +34,7 @@ class CreateUrlView(CreateView):
 
         self.add_url_to_list(form.instance)
 
-        return HttpResponseRedirect('/urls/list/')
+        return redirect(reverse('list urls'))
 
 
 class UrlListView(ListView):
@@ -47,8 +49,8 @@ class StatisticsView(ListView):
     template_name = 'statistics.html'
     context_object_name = 'logs'
 
-    def get_queryset(self):
-        return Log.objects.filter()
+    def get_queryset(self, **kwargs):
+        return Log.objects.filter(url__short_url=self.kwargs['short_url'])
 
 
 class RedirectFromShortenedView(TemplateView):
@@ -77,4 +79,4 @@ class RedirectFromShortenedView(TemplateView):
         url = get_object_or_404(ShortenedUrl, short_url=kwargs['short_url'])
         self.create_log(url)
         print(url.long_url)
-        return HttpResponseRedirect(url.long_url)
+        return redirect(url.long_url)
