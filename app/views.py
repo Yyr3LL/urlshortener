@@ -57,7 +57,7 @@ class StatisticsView(LoginRequiredMixin, ListView):
         return Log.objects.filter(url__short_url=self.kwargs['short_url'])
 
 
-class RedirectFromShortenedView(LoginRequiredMixin, TemplateView):
+class RedirectFromShortenedView(TemplateView):
 
     def create_log(self, url):
         """
