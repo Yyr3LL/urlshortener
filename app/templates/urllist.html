@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Url list</title>
+</head>
+<body>
+<ol>
+    {% for url in urls %}
+    <li>
+        <p>{{url.short_url}}</p>
+        <p>{{url.long_url}}</p>
+    </li>
+    {% endfor %}
+</ol>
+</body>
+</html>

@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -11,7 +12,12 @@ class ShortenedUrl(models.Model):
 
 
 class UrlsList(models.Model):
-    shortened_url = models.ManyToManyField(
+    user = models.OneToOneField(
+        User,
+        on_delete=models.CASCADE,
+        related_name='url_list'
+    )
+    urls = models.ManyToManyField(
         ShortenedUrl
     )
 
