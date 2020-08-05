@@ -19,7 +19,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'app',
+    'app.apps.AppConfig',
 ]
 
 SITE_ID = 1
@@ -32,9 +32,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'app.middleware.AuthRequiredMiddleware',
 ]
 
-ROOT_URLCONF = 'urlshortener.urls'
+ROOT_URLCONF = 'bitly-parody.urls'
 
 TEMPLATES = [
     {
@@ -58,7 +59,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 
-WSGI_APPLICATION = 'urlshortener.wsgi.application'
+WSGI_APPLICATION = 'bitly-parody.wsgi.application'
 
 DATABASES = {
     'default': {
@@ -81,6 +82,12 @@ AUTH_PASSWORD_VALIDATORS = [
     #     'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     # },
 ]
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username'
+
+ACCOUNT_EMAIL_REQUIRED = False
 
 LOGIN_REDIRECT_URL = '/accounts/zdarova'
 

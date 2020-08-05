@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Creating url</title>
 </head>
 <body>
-$END$
+<a href="{% url 'list urls' %}">List urls</a>
+<form method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <button type="submit">The url shalt be shortened!</button>
+</form>
 </body>
 </html>

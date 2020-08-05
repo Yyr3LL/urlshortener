@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -11,7 +12,12 @@ class ShortenedUrl(models.Model):
 
 
 class UrlsList(models.Model):
-    shortened_url = models.ManyToManyField(
+    user = models.OneToOneField(
+        User,
+        on_delete=models.CASCADE,
+        related_name='url_list'
+    )
+    urls = models.ManyToManyField(
         ShortenedUrl
     )
 
@@ -21,14 +27,16 @@ class UrlsList(models.Model):
 
 
 class Log(models.Model):
-    statistics = models.OneToOneField(
+    url = models.ForeignKey(
         ShortenedUrl,
         verbose_name='Statistics',
         on_delete=models.CASCADE
     )
     referer = models.TextField()
     ip = models.TextField()
-    date = models.DateField()
+    date = models.DateTimeField(
+        auto_now_add=True
+    )
 
     class Meta:
         verbose_name = 'Log'
