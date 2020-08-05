@@ -27,14 +27,16 @@ class UrlsList(models.Model):
 
 
 class Log(models.Model):
-    statistics = models.OneToOneField(
+    url = models.ForeignKey(
         ShortenedUrl,
         verbose_name='Statistics',
         on_delete=models.CASCADE
     )
     referer = models.TextField()
     ip = models.TextField()
-    date = models.DateField()
+    date = models.DateField(
+        auto_now=True
+    )
 
     class Meta:
         verbose_name = 'Log'
