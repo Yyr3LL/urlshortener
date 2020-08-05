@@ -12,7 +12,6 @@ class AuthRequiredMiddleware:
         if not request.user.is_authenticated:
             return redirect('/auth/login')
 
-
         response = self.get_response(request)
 
         return response

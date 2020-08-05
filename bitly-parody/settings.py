@@ -32,7 +32,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'app.middleware.AuthRequiredMiddleware',
 ]
 
 ROOT_URLCONF = 'bitly-parody.urls'
@@ -89,7 +88,7 @@ ACCOUNT_AUTHENTICATION_METHOD = 'username'
 
 ACCOUNT_EMAIL_REQUIRED = False
 
-LOGIN_REDIRECT_URL = '/accounts/zdarova'
+LOGIN_REDIRECT_URL = '/list'
 
 LANGUAGE_CODE = 'en-us'
 
